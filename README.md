@@ -1,4 +1,4 @@
-# Santa Fe River Sink-Rise System Streamflow Check
+# Santa Fe River Sink-Rise Streamflow Check
 
 This repository contains a collection of Python tools for downloading, processing,
 interpolating, and visualizing **USGS NWIS Instantaneous Values (IV) streamflow data**.
