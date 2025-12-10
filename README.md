@@ -1,53 +1,17 @@
-# Santa Fe River Sink-Rise Streamflow Check
-
-This repository contains a collection of Python tools for downloading, processing,
-interpolating, and visualizing **USGS NWIS Instantaneous Values (IV) streamflow data**.
-The primary purpose is to support **Santa Fe River Sink–Rise system hydrograph analysis**, where discharge
-from two hydrologic stations (River Sink & River Rise) is compared through time.
+## Santa Fe River Sink-Rise Streamflow Check
 
 The repository includes an interactive **Google Colab notebook**, which allows users to:
 
 - Specify start/end date ranges
 - Interpolate time series to a uniform time grid
 - Plot the Sink, Rise, and Sink–Rise difference curves
-- Explore flow dynamics without installing anything locally
 
----
+No installation is required — everything runs in the cloud via Google Colab.
 
-## Launch Interactive Notebook in Google Colab
-
-Click below to run the tool directly in your browser:
+Click below to run the tool:
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](
 https://colab.research.google.com/github/yoon-group/sink_rise_discharge/blob/main/sink_rise_discharge.ipynb
 )
-
-No installation is required — everything runs in the cloud via Google Colab.
-
-
----
-
-## Features of the Notebook
-
-### Retrieve USGS IV Data  
-- Uses the official USGS NWIS Instantaneous Values API  
-- Retrieves discharge (`00060`) by default  
-- Works with any station with IV data available  
-
-### Interpolation of Time Series  
-Sink and Rise data may have slightly inconsistent timestamps.  
-The notebook:
-
-- Creates a common time grid (`15min` default)
-- Interpolates both series using time-based interpolation
-- Computes Sink and Rise discharge differences
-- Produces smooth plots
-
-### Interactive UI via `ipywidgets`  
-Users can edit:
-- Start date  
-- End date  
-
-The UI updates the plots dynamically.
 
 ---
